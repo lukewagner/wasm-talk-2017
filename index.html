@@ -580,13 +580,7 @@ WebAssembly.instantiate(fetch('main.wasm'), {logger:{printInt}});
 
             <section>
                 <p>Today, WebAssembly only gets to Web APIs by "thunking" through JavaScript</p>
-                <p>(That's what the WebAssembly <a href="http://webassembly.org/demo">demo</a> is doing)</p>
-            </section>
-
-
-            <section>
-                <p>Emscripten maps common C/C++ interfaces to Web APIs</p>
-                <p>For example, using libc and SDL:</p>
+                <p>Emscripten maps common C/C++ interfaces to Web APIs:</p>
                 <pre><code class="c" data-trim>
 #include &lt;SDL/SDL.h&gt;
 #include &lt;stdio.h&gt;
@@ -734,6 +728,10 @@ emcc -O2 test.c -o test.html
                 <p>
                   Slides at lukewagner.github.io/wasm-talk-2017
                 </p>
+                <div class="fragment">
+                  <h2>Questions?</h2>
+                  <a href="https://s3.amazonaws.com/mozilla-games/ZenGarden/EpicZenGarden.html">Background Eye Candy</a></a>
+                </div>
             </section>
 
 
